@@ -1,0 +1,250 @@
+:root {
+    --bg-clr: #edf2f4;
+    --success-msg: #6ec46e;
+    --warning-msg: #FEEFB3;
+    --error-msg: rgb(255, 113, 113);
+}
+
+#spinner {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.main-container {
+    position: relative;
+    background-color: var(--bg-clr);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.modal-header h1 {
+    font-weight: 400;
+}
+
+.inputs-div {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.inputs-div label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.checkbox {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.checkbox label {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.table-div {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.thead {
+    background-color: #0d1321 !important;
+    color: white !important;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 0 !important;
+}
+
+.search-div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.search-div input {
+    min-width: 250px;
+    width: 350px;
+    overflow: hidden;
+    padding: 6px 23px 6px 7px;
+    border: none;
+    background-color: rgba(211, 211, 211, 0.514);
+    border-radius: 5px;
+}
+
+.search-div input:focus {
+    background-color: white;
+}
+
+.search-icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.inputs-div input,
+.inputs-div select,
+option {
+    background-color: rgba(219, 219, 219, 0.452);
+}
+
+.toggle-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+.error {
+    border: 1px solid rgb(255, 73, 73);
+}
+
+.error-span {
+    color: rgb(255, 73, 73);
+}
+
+.flex-row-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2px;
+}
+
+.profileImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profileDetails {
+    width: 100%;
+    display: flex;
+    background-color: #0d1321;
+    color: rgb(236, 254, 255);
+    padding: .8rem;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.profileDetails:hover {
+    background-color: #19253d;
+}
+
+.profile-heading {
+    width: 40%;
+}
+
+.profile-value {
+    width: 60%;
+}
+
+a {
+    color: #0d1321;
+    text-decoration: none;
+}
+
+.message-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 37%;
+    min-height: 40px;
+    padding: 5px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.message-div span {
+    font-weight: 500;
+}
+
+.message-span {
+    padding: 5px 12px;
+    font-size: 20px;
+}
+
+.error-msg {
+    background-color: var(--error-msg);
+}
+
+.success-msg {
+    background-color: var(--success-msg);
+}
+
+.warning-msg {
+    background-color: var(--warning-msg);
+}
+
+.sort-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1);
+    }
+
+    32% {
+        color: var(--color-1);
+    }
+
+    33% {
+        color: var(--color-2);
+    }
+
+    65% {
+        color: var(--color-2);
+    }
+
+    66% {
+        color: var(--color-3);
+    }
+
+    99% {
+        color: var(--color-3);
+    }
+
+    100% {
+        color: var(--color-1);
+    }
+}
+.title{
+    font-weight: 700;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+.page-link.active{
+    background-color: black;
+    color: white !important;
+    border-color: blue;
+}
